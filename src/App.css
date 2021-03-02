@@ -1,0 +1,93 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-auto-rows: 100px;
+	background: url("https://media.istockphoto.com/vectors/sky-and-clouds-background-sky-and-cloud-with-blue-color-cartoon-vector-id1084416182?k=6&m=1084416182&s=612x612&w=0&h=1n42_eBf348dNub41s2Y-daq7SLU-zBVutLJY_xcnJg=");
+}
+
+.grid-item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 99px;
+	height: 99px;
+	content: "";
+	border: 1px solid rgb(255 255 255 / 18%);
+}
+
+.grid-item img {
+	width: 70px;
+	height: 70px;
+}
+
+.alert {
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	backdrop-filter: blur(5px);
+	font-weight: 800;
+}
+
+.alert.red {
+	background-color: rgb(210 89 89 / 73%);
+}
+
+.alert.yellow {
+	background-color: rgb(234 213 64 / 79%);
+}
+
+.alert img {
+	height: 200px;
+	margin-bottom: 30px;
+}
+
+.button {
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 10px;
+	font-weight: 900;
+	border: unset;
+	color: white;
+	margin-top: 30px;
+	cursor: pointer;
+	outline: unset;
+}
+
+.yellow .button {
+	background: #009ede;
+	box-shadow: 10px 11px 18px #379ede82;
+}
+
+.red .button {
+	background: #ed664c;
+	box-shadow: 10px 11px 18px #ed664ca3;
+}
