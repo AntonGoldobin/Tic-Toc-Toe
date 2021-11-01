@@ -1,0 +1,41 @@
+body {
+	margin: unset;
+	background-color: #1d2934;
+}
+
+iframe {
+	height: calc(100vh - 50px);
+	width: 100%;
+	border: unset;
+}
+
+.bg-circle {
+	position: absolute;
+	z-index: -1;
+	width: 70%;
+	height: 70%;
+	right: 0;
+	top: 0;
+	background: radial-gradient(50% 50% at 50% 50%, #7521a9 0%, rgba(69, 62, 114, 0) 100%);
+	opacity: 0.3;
+}
+
+.particle-container.left-top {
+	position: absolute;
+	right: 100%;
+	opacity: 0.3;
+	top: 10%;
+}
+
+.light-bg {
+	background-image: url(../images/light-bg.png);
+	position: absolute;
+	height: 100%;
+	background-position: unset;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
